@@ -1,0 +1,173 @@
+/*************** tag selectors ******************/
+
+body {
+  margin: 0;
+  text-align: center;
+  /* specific to less specific to make sure atleast one font style is loaded */
+  /* css font stack website */
+  /* fonts.google.com can be used to make sure all users have the same experience
+  put the link into your index.html and it will be a back up if users do not have
+  the needed fonts
+  40514E*/
+  font-family: 'Open Sans', sans-serif;
+  background-color: #8F8FA0;
+}
+
+h1 {
+  color: #D2D2D9;
+  font-size: 5.625rem;
+  margin: 40px auto 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  color: #D2D2D9;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #D2D2D9;
+  font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+    border: dotted #D2D2D9 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto 100px auto;
+   }
+
+p {
+  line-height: 2;
+}
+
+a {
+  color: #D2D2D9;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #D1788F;
+}
+
+
+/*************** class selectors ******************/
+
+.top-container {
+  background-color: #363554;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container {
+  margin: 100px auto 100px auto;
+}
+
+.bottom-container {
+  background-color: #363554;
+  padding: 50px 0 20px;
+}
+
+/* this is the coolest thing ever */
+.astronaut {
+  width: 25%;
+  animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }
+}
+
+.btn {
+  background: #201F41;
+  background-image: -webkit-linear-gradient(top, #201F41, #422D53);
+  background-image: -moz-linear-gradient(top, #201F41, #422D53);
+  background-image: -ms-linear-gradient(top, #201F41, #422D53);
+  background-image: -o-linear-gradient(top, #201F41, #422D53);
+  background-image: linear-gradient(to bottom, #201F41, #422D53);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #D2D2D9;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #201F41 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #D2D2D9;
+  background-image: -webkit-linear-gradient(top, #201F41, #422D53);
+  background-image: -moz-linear-gradient(top, #DD7C86, #422D53);
+  background-image: -ms-linear-gradient(top, #DD7C86, #422D53);
+  background-image: -o-linear-gradient(top, #DD7C86, #422D53);
+  background-image: linear-gradient(to bottom, #DD7C86, #422D53);
+  text-decoration: none;
+}
+
+.contact-desc {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+.comp-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.rocket-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.footer-desc {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+.intro-desc {
+  width: 25%;
+  margin: auto;
+}
+.profile-pic {
+  width: 15%;
+  margin-top: 50px;
+}
+
+.programmer {
+  width: 25%;
+  margin: 50px;
+}
+
+.space {
+  position: absolute;
+  width: 25%;
+  margin-left: 1000px;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}

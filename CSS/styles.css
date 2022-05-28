@@ -58,25 +58,36 @@ a:hover {
 
 /*************** class selectors ******************/
 
+
+/* top container classes and items */
 .top-container {
   background-color: #363554;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('stars2.png');
   position: relative;
   padding-top: 100px;
+  text-align: center;
+}
+.name {
+  /* h1 already has margin from top in elements section so adding any here would accumulate */
+  position: relative;
+}
+.programmer {
+  position:relative;
+  width: 25%;
+  margin: 50px;
 }
 
-.middle-container {
-  margin: 100px auto 100px auto;
-}
-
-.bottom-container {
-  background-color: #363554;
-  padding: 50px 0 20px;
+.space {
+  position: relative;
+  width: 25%;
+  left: 75%;
 }
 
 /* this is the coolest thing ever */
 .astronaut {
-  width: 25%;
+  width: 30%;
   animation-name: floating;
+  margin-bottom: 2rem;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
@@ -85,6 +96,52 @@ a:hover {
     0% { transform: translate(0,  0px); }
     50%  { transform: translate(0, 15px); }
     100%   { transform: translate(0, -0px); }
+}
+@media only screen and (max-width: 600px) {
+  .astronaut {
+    left: 30px;
+    width: 50%;
+  }
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+/* middle container items */
+.middle-container {
+  margin: 100px auto 100px auto;
+}
+
+.contact-desc {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+.comp-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.rocket-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.intro-desc {
+  width: 25%;
+  margin: auto;
+}
+.profile-pic {
+  width: 15%;
+  margin: 2rem auto;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
 }
 
 .btn {
@@ -115,59 +172,16 @@ a:hover {
   text-decoration: none;
 }
 
-.contact-desc {
-  width: 40%;
-  margin: 40px auto 60px;
-}
-.comp-img {
-  width: 25%;
-  float: left;
-  margin-right: 30px;
-}
 
-.rocket-img {
-  width: 25%;
-  float: right;
-  margin-left: 30px;
+/* bottom container items */
+.bottom-container {
+  background-color: #363554;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('stars2.png');
+  padding: 50px 0 20px;
 }
 
 .footer-desc {
   color: #EAF6F6;
   font-size: 0.75rem;
   padding: 20px 0;
-}
-.intro-desc {
-  width: 25%;
-  margin: auto;
-}
-.profile-pic {
-  width: 15%;
-  margin-top: 50px;
-}
-
-.programmer {
-  width: 25%;
-  margin: 50px;
-}
-
-.space {
-  position: absolute;
-  width: 25%;
-  margin-left: 1000px;
-}
-
-.pro {
-  text-decoration: underline;
-}
-
-.skill-row {
-  width: 50%;
-  margin: 100px auto 100px auto;
-  text-align: left;
-}
-
-.top-cloud {
-  position: absolute;
-  right: 300px;
-  top: 50px;
 }
